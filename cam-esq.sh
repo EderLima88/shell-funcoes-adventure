@@ -9,7 +9,7 @@ caminho="$result"
 
 case "$caminho" in
 	esquerda)
-		usar_pv "Tu saiu da cabana"
+		usar_pv "\033[5mTu saiu da cabana\033[0m"
 		;;
 	direita)
 		usar_pv "Caiu numa armadinha"

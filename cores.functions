@@ -1,0 +1,63 @@
+#!/bin/bash
+
+# --- RESET (Sempre use ao final de cada frase) ---
+RESET='\033[0m'
+
+# --- ESTILOS ---
+NEGRITO='\033[1m'
+SUBRINHADO='\033[4m'
+PISCANTE='\033[5m'
+INVERTER='\033[7m' # Inverte cor da letra com a do fundo
+
+# --- CORES DE TEXTO (LETRAS) ---
+T_PRETO='\033[0;30m'
+T_VERMELHO='\033[0;31m'
+T_VERDE='\033[0;32m'
+T_AMARELO='\033[0;33m'
+T_AZUL='\033[0;34m'
+T_ROXO='\033[0;35m'
+T_CIANO='\033[0;36m'
+T_BRANCO='\033[0;37m'
+T_CINZA='\033[0;90m'
+
+# --- CORES DE TEXTO INTENSAS (MAIS BRILHANTES) ---
+T_VERMELHO_I='\033[0;91m'
+T_VERDE_I='\033[0;92m'
+T_AMARELO_I='\033[0;93m'
+T_AZUL_I='\033[0;94m'
+T_ROXO_I='\033[0;95m'
+T_CIANO_I='\033[0;96m'
+T_BRANCO_I='\033[0;97m'
+
+# --- CORES DE FUNDO (BACKGROUND) ---
+F_PRETO='\033[40m'
+F_VERMELHO='\033[41m'
+F_VERDE='\033[42m'
+F_AMARELO='\033[43m'
+F_AZUL='\033[44m'
+F_ROXO='\033[45m'
+F_CIANO='\033[46m'
+F_BRANCO='\033[47m'
+
+
+# --- CORES DE FUNDO INTENSAS ---
+F_CINZA='\033[100m'
+F_VERMELHO_I='\033[101m'
+F_VERDE_I='\033[102m'
+F_AMARELO_I='\033[103m'
+F_AZUL_I='\033[104m'
+F_ROXO_I='\033[105m'
+F_CIANO_I='\033[106m'
+F_BRANCO_I='\033[107m'
+
+testar_cores() {
+    echo -e "\n--- TABELA DE CORES ANSI ---\n"
+    for fgbg in 38 48; do # 38 para Texto, 48 para Fundo
+        for color in {0..15}; do 
+            echo -en "\e[${fgbg};5;${color}m  Color $color  \e[0m"
+            # Quebra linha a cada 8 cores para ficar organizado
+            if [ $((($color + 1) % 8)) == 0 ]; then echo; fi
+        done
+        echo
+    done
+}

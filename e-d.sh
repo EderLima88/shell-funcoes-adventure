@@ -12,7 +12,8 @@ read -rsn1 tecla
                 result="esquerda"
 		;;
         *)
-                result="Outra tecla"
+                result="errado, a aventura acabou"
+		
 		;;
 esac
 
