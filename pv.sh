@@ -1,3 +1,3 @@
 usar_pv() {
-echo "$1" | pv -qL 10
+echo "$1" | pv -qL 30
 }
