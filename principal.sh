@@ -20,7 +20,7 @@ source ./e-d.sh
 #echo "o valor de result em principal é: $result"
 #read -p "$result" caminho
 caminho="$result"
-usar_pv "O caminho que voce escolhe é $caminho"
+#usar_pv "O caminho que voce escolhe é $caminho"
 
 case "$caminho" in
 	esquerda)
@@ -33,6 +33,15 @@ case "$caminho" in
 		cam-dir
 		break
 		;;
+	cima)
+		usar_pv "Caminho para a frente"
+		break
+		;;
+	baixo)
+		usar_pv "Cainho de volta"
+		break
+		;;
+
 	*)
 		usar_pv "Tente outro caminho."
 esac
