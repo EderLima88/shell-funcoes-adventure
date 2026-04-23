@@ -7,7 +7,8 @@ source ./pv.functions
 #--------------------------
 
 echo "Programa shell linux com funcoes"
-
+usar_pv "Voce esta em uma aventura onde suas decicoes determinam sua trajetoria em uma floresta. 
+Fique atento pois a lugares com armadilhas onde nao ha qualquer pista que mostre onde poderao estar"
 source ./cam-esq.sh
 source ./cam-dir.sh
 
