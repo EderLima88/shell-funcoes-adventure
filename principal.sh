@@ -38,7 +38,7 @@ case "$caminho" in
 		break
 		;;
 	baixo)
-		usar_pv "Cainho de volta"
+		usar_pv "Caminho de volta"
 		break
 		;;
 
@@ -46,6 +46,5 @@ case "$caminho" in
 		usar_pv "Tente outro caminho."
 esac
 done
-#--------------------------
 
-
+usar_pv "Fim da aventura — obrigado por jogar!"

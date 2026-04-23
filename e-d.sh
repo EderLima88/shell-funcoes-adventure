@@ -11,7 +11,6 @@ read -rsn1 tecla
         $'\e'[D)
                 result="esquerda"
 		;;
-
 	$'\e[A')
 		result="cima"
 		;;

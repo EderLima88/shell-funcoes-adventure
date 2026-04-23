@@ -1,6 +1,6 @@
 cam-esq() {
 while true; do
-usar_pv "Agora dentro da casa velha, tu tem duas alternativas, a esquerda e a direita, escolha com as setas"
+usar_pv "Agora dentro da casa velha, esolha um caminhop com <>^B, escolha com as setas"
 
 source ./e-d.sh
 
@@ -10,11 +10,19 @@ caminho="$result"
 
 case "$caminho" in
 	esquerda)
-		usar_pv "Tu saiu da cabana"
+		usar_pv "Como foi para a $caminho...tu saiu da cabana"
 		break
 		;;
 	direita)
-		usar_pv "Caiu numa armadinha"
+		usar_pv "Como foi para a $caminho...caiu numa armadinha"
+		break
+		;;
+	cima)
+		usar_pv "Como foi para $caminho...saiu pela porta dos fundos"
+		break
+		;;
+	baixo)
+		usar_pv "Como foi para $caminho...voce retornonou"
 		break
 		;;
 	*)
