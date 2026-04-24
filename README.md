@@ -1,5 +1,6 @@
-# descrição
+![img](/assets/tela-linux-adventure.gif) &nbsp; &nbsp; &nbsp;
+![img](/assets/tux-250.png)
+![img](/assets/terminal-180.png)
 
-## do coneudo
-
-### aqui
+# texto
+Descrição do projeto pessoal.🐚
