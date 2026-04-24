@@ -13,6 +13,7 @@ usar_pv "Voce esta em uma aventura onde suas decicoes determinam sua trajetoria 
 Fique atento pois a lugares com armadilhas onde nao ha qualquer pista que mostre onde poderao estar"
 source ./cam-esq.sh
 source ./cam-dir.sh
+source ./cam-cim.sh
 
 while true; do
 usar_pv "Presione as setas esquerda ou direita para ecolher um caminho"
@@ -37,6 +38,7 @@ case "$caminho" in
 		;;
 	cima)
 		usar_pv "Caminho para a frente"
+		cam-cim
 		break
 		;;
 	baixo)
