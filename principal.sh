@@ -1,5 +1,7 @@
 #!/bin/bash
-figlet Linux Funcoes Adventure
+source ./cores.functions
+
+echo -e "${PISCANTE}$(figlet 'Linux Funcoes Adventure')${RESET}"
 
 #--------arquivos de funcoes
 source ./pv.functions
@@ -47,4 +49,4 @@ case "$caminho" in
 esac
 done
 
-usar_pv "Fim da aventura — obrigado por jogar!"
+usar_pv "${F_VERMELHO}${PISCANTE}Fim da aventura — obrigado por jogar!${RESET}"
