@@ -1,4 +1,10 @@
 #!/bin/bash
+# --- Música de fundo (rodando em segundo plano) ---
+export PULSE_SERVER=unix:/mnt/wslg/PulseServer
+ffplay -nodisp -autoexit -loglevel quiet assets/musica.wav >/dev/null 2>&1 &
+MUSIC_PID=$!
+
+
 source ./cores.functions
 
 echo -e "${PISCANTE}$(figlet 'Linux Funcoes Adventure')${RESET}"
@@ -53,5 +59,9 @@ case "$caminho" in
 		usar_pv "Tente outro caminho."
 esac
 done
+
+# --- Para a música ao terminar ---
+kill $MUSIC_PID
+
 
 usar_pv "${F_VERMELHO}${PISCANTE}Fim da aventura — obrigado por jogar!${RESET}"
