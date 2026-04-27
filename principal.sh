@@ -14,6 +14,7 @@ Fique atento pois a lugares com armadilhas onde nao ha qualquer pista que mostre
 source ./cam-esq.sh
 source ./cam-dir.sh
 source ./cam-cim.sh
+source ./cam-bai.sh
 
 while true; do
 usar_pv "Presione as setas esquerda ou direita para ecolher um caminho"
@@ -42,7 +43,8 @@ case "$caminho" in
 		break
 		;;
 	baixo)
-		usar_pv "Caminho de volta"
+		usar_pv "Sua deciso foi voltar e ir embora"
+		cam-bai
 		break
 		;;
 
