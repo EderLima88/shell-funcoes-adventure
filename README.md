@@ -2,8 +2,19 @@
 ![img](/assets/tela-linux-adventure-menor.gif) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 ![img](/assets/terminal-120.png)
 
-# texto
-Descrição do projeto pessoal.🐚
+# Objeto
+Uma aventura em textos, craida no WSL com Ubuntu.<br>
+Rever e praticar tecnicas e conceitos de scripts.<br>
+
+## Tecnologias
+* WSL
+* Ubuntu
+* NANO
+* Git
+* Shell Script Linux
+  
+## Caminhos da Aventura
+
 ```
 +--------------------------------------------------+
 |                    PRINCIPAL                     |

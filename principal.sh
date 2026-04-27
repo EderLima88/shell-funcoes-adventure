@@ -17,7 +17,8 @@ source ./cam-cim.sh
 source ./cam-bai.sh
 
 while true; do
-usar_pv "Presione as setas esquerda ou direita para ecolher um caminho"
+usar_pv "Presione os direcinais para ecolher um caminho"
+usar_pv "< casa, > trilha, ^ frente, v embora."
 source ./e-d.sh
 
 #--------corpo-------------
@@ -28,22 +29,22 @@ caminho="$result"
 
 case "$caminho" in
 	esquerda)
-		usar_pv "Voce entrou em uma casa velha"
+		usar_pv "Voce entrou em uma casa velha."
 		cam-esq
 		break
 		;;
 	direita)
-		usar_pv "Voce optou em seguir por uma trilha"
+		usar_pv "Voce optou em seguir por uma trilha."
 		cam-dir
 		break
 		;;
 	cima)
-		usar_pv "Caminho para a frente"
+		usar_pv "Caminho para a frente, voce esta em uma caverna."
 		cam-cim
 		break
 		;;
 	baixo)
-		usar_pv "Sua deciso foi voltar e ir embora"
+		usar_pv "Sua decisao foi voltar e ir para seu carro."
 		cam-bai
 		break
 		;;
