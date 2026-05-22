@@ -3,7 +3,7 @@
 ![img](/assets/terminal-120.png)
 
 # Objeto
-Uma aventura em textos, craida no WSL com Ubuntu.<br>
+Uma aventura em textos, criada no WSL com Ubuntu.<br>
 Rever e praticar tecnicas e conceitos de scripts.<br>
 
 ## Tecnologias
